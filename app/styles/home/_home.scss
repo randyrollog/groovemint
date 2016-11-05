@@ -1,0 +1,73 @@
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  video {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &.fade-out {
+    animation: fade-out 2s forwards;
+  }
+
+  &.remove-intro {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-landing {
+  height: 100%;
+  width: 100%;
+  display: none;
+
+  &.fade-in {
+    animation: fade-in 2s forwards;
+    display: flex;
+  }
+}
+
+.image-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1.landing-header {
+  color: white;
+}
+
+p.lead {
+  color: #9a9a9a;
+}
+
+p.coming-soon {
+  i {
+    font-size: 14px;
+    color: aliceblue;
+  }  
+}
+
+
+.jumbotron p {
+  margin-bottom: 5px;
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
